@@ -1,0 +1,10 @@
+<!-- Acessando uma propriedade da classe CursosComponent através da interpolação {{}} -->
+<p>Lista do portal da: <a href="{{ nomePortal }}">Loiane</a></p>
+<ul>
+  <!-- Criando uma diretiva ngFor que serve como um for padrão para acessar cada posição do array de cursos lá na classe CursosComponent -->
+  <li *ngFor="let curso of cursos">
+    {{ curso }}
+  </li>
+</ul>
+
+<app-curso-detalhe></app-curso-detalhe>
